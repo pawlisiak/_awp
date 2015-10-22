@@ -5,10 +5,11 @@
 			<?php if( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail(); ?>
 			<?php endif; ?>
+
 			<section class="post-body">
 				<?php if( is_sticky() ) : ?>
 					<div class="sticky-info">
-						<?php _e('Sticky post', 'amp'); ?>
+						<?php _e('Sticky post', 'awp'); ?>
 					</div>
 				<?php endif; ?>
 				<h1>
@@ -17,12 +18,12 @@
 					</a>
 				</h1>
 				<section class="meta">
-					<small><?php _e('Published', 'amp'); ?> <?php echo get_the_date(); ?> <?php _e('by', 'amp'); ?> <?php the_author(); ?></small>
+					<small><?php _e('Published', 'awp'); ?> <?php echo get_the_date(); ?> <?php _e('by', 'awp'); ?> <?php the_author(); ?></small>
 				</section>
-				<?php the_content(''); ?>
+				<?php the_excerpt(); ?>
 			</section>
 			<a class="more-link" href="<?php the_permalink(); ?>">
-				<?php _e('Read more', 'amp'); ?>
+				<?php _e('Read more', 'awp'); ?> &raquo;
 			</a>
 		</article>
 	<?php endwhile; ?>

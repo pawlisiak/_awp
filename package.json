@@ -1,5 +1,5 @@
 {
-  "name": "amp",
+  "name": "awp",
   "version": "1.0.0",
   "description": "Theme for WordPress build using AMP components.",
   "main": "gulpfile.js",
